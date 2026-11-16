@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    font-family: monospace;
+    line-height: 1.6;
+    color: #2b2b2b;
+    background-image: url('Source/Oxford.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* =====peipah===== */
+#paper {
+    width: 100%;
+    max-width: 720px;
+    padding: 2.5rem 2.25rem;
+    background: #fffdf7;
+    border-radius: 3px;
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.15),
+        0 12px 30px rgba(0, 60, 70, 0.25);
+    /* garis tipis seperti kertas bergaris */
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 27px,
+        rgba(90, 150, 190, 0.12) 27px,
+        rgba(90, 150, 190, 0.12) 28px
+    );
+}
+
+/* ===== pictureeee ===== */
+#header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.photo-frame {
+    margin: 0;
+    padding: 10px 10px 8px;
+    width: 100%;
+    max-width: 370px;
+    background-color: beige;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #d9d4c5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-1.5deg);
+}
+
+.photo-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: #eee;
+}
+
+.photo-frame figcaption {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #777;
+}
+
+/* ===== ISI ===== */
+h2 {
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+#nama {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#nama p,
+#isi p {
+    margin: 0 0 1rem;
+}
+
+h6 {
+    margin: 0.5rem 0 0;
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: #555;
+}
+
+#list ul {
+    margin: 0 0 1.5rem;
+    padding-left: 1.25rem;
+}
+
+#footer-note {
+    margin: 2rem 0 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ===== unutk web di hp ===== */
+@media (max-width: 480px) {
+    #paper {
+        padding: 1.5rem 1.25rem;
+    }
+}
